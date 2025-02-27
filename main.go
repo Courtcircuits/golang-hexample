@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Courtcircuits/students/domains"
+	"github.com/Courtcircuits/students/service"
 )
 
 
@@ -23,7 +24,7 @@ func main() {
 
 	//with the service
 
-	service := domains.StudentServiceImpl{
+	service := service.StudentServiceImpl{
 		StudentRepository: sr,
 	}
 
